@@ -4,7 +4,7 @@ from rest_framework import serializers
 from new_app.models import User
 
 class UserSerializer (serializers.ModelSerializer):
-    class meta:
+    class Meta:
         model=User
         fields=['email','password']
         read_only_feild=['id']
